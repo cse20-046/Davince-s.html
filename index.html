@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO JOHANNESBURG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT JOZI</a></li>
+                    <li><a href="lifestyle.html">LIFESTLYE</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="connect.html">CONNECT WITH US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>JOHANNESBURG</h1>
+            <p>LEARN AND EXPLORE ABOUT THE CITY OF GOLD.</p>
+            <a href="https://www.joburg.org.za/" class="hero-btn">EXPLORE JOZI</a>
+        </div>
+    </section>
+    
+    
+    <section class="footer">
+        <p>Designed by Aobakwe DaVince Modise<br>cse20-046@thuto.bac.ac.bw</p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>

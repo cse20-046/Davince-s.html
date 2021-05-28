@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONNECT WITH US</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT JOZI</a></li>
+                    <li><a href="lifestyle.html">LIFESTLYE</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="connect.html">CONNECT WITH US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>CONNECT WITH US</h1>
+    </section>
+    
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <span>
+                        <h5>Plot No. 7519. Broadhurst, Extension 27</h5>
+                        <p>Gaborone, Botswana</p>
+                    </span>
+                </div>
+                
+                <div>
+                    <i class="fa fa-volume-control-phone"></i>
+                    <span>
+                        <h5>+267 72 589 441</h5>
+                        <p>Open All Day, Everyday</p>
+                    </span>
+                </div>
+                
+                <div>
+                    <i class="fa fa-comments"></i>
+                    <span>
+                        <h5>Aobakwe DaVince Modise<br>cse20-046@thuto.bac.ac.bw</h5>
+                        <p>Email Us Your Query</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-col">
+            <h4>Subscribe To Our Newsletter</h4>
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Your Email Address" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <p>Designed by Aobakwe DaVince Modise<br>cse20-046@thuto.bac.ac.bw</p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
